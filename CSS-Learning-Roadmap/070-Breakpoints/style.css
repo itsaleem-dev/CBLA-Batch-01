@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.box {
+    padding: 1rem;
+    background: #6366f1;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.legend {
+    line-height: 1.9;
+}
+
+.badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: .4rem 1rem;
+    background: #ef4444;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 99px;
+}
+
+.badge::after {
+    content: "XS";
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 576px) {
+    .badge {
+        background: #f59e0b;
+    }
+    .badge::after {
+        content: "SM";
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .badge {
+        background: #eab308;
+    }
+    .badge::after {
+        content: "MD";
+    }
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .badge {
+        background: #10b981;
+    }
+    .badge::after {
+        content: "LG";
+    }
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .badge {
+        background: #3b82f6;
+    }
+    .badge::after {
+        content: "XL";
+    }
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

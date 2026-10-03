@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.title {
+    max-width: 20ch;
+    text-wrap: balance;
+    color: oklch(45% .25 280);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    padding: 1.25rem;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: transform .2s;
+    :is(h3, p) {
+        margin: 0 0 .5rem;
+    }
+    &:hover {
+        transform: translateY(-4px);
+    }
+    &:has(.badge) {
+        border-color: oklch(70% .2 150);
+        background: oklch(97% .04 150);
+    }
+}
+
+.badge {
+    padding: .1rem .6rem;
+    background: oklch(65% .2 150);
+    color: #fff;
+    font-size: .75rem;
+    border-radius: 99px;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.options label {
+    padding: .75rem 1.25rem;
+    background: #fff;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.options label:has(input:checked) {
+    border-color: #4f46e5;
+    background: #e0e7ff;
+}
+
+.strip {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.strip div {
+    flex: 0 0 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: oklch(60% .2 280);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    scroll-snap-align: center;
+}

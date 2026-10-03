@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+}
+
+.r1 {
+    background: radial-gradient(circle, #fde047, #f97316);
+}
+
+.r2 {
+    background: radial-gradient(ellipse at top left, #a78bfa, #1e1b4b);
+}
+
+.r3 {
+    background: radial-gradient(circle at 70% 30%, #ffffff, #38bdf8 40%, #0c4a6e);
+}
+
+.r4 {
+    background: radial-gradient(circle closest-side, #f43f5e 60%, #fecdd3 61%);
+}
+
+.r5 {
+    background: repeating-radial-gradient(circle, #6366f1 0 10px, #e0e7ff 10px 20px);
+}

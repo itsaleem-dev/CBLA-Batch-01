@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.btn {
+    --bg: #4f46e5;
+    --fg: #fff;
+    margin: .25rem;
+    padding: .7rem 1.2rem;
+    border: 0;
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--fg);
+    cursor: pointer;
+}
+
+.btn.success {
+    --bg: #059669;
+}
+
+.btn.danger {
+    --bg: #dc2626;
+}
+
+.btn:hover {
+    background: color-mix(in srgb, var(--bg), black 25%);
+}
+
+.dark {
+    display: inline-block;
+    margin: .5rem;
+    padding: 1rem;
+    background: #1f2937;
+    border-radius: 8px;
+}
+
+.dark .btn {
+    --bg: #fbbf24;
+    --fg: #111;
+}
+
+.fallback {
+    padding: 1rem;
+    background: var(--missing-color, #fbcfe8);
+    border-radius: 6px;
+}
+
+.scale {
+    width: calc(var(--level) * 40px);
+    min-width: fit-content;
+    padding: .5rem;
+    background: #a5b4fc;
+    border-radius: 6px;
+}

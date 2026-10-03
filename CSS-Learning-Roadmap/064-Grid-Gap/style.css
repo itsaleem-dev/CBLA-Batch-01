@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.box {
+    padding: 1rem;
+    background: #6366f1;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 1rem 0 .5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: .75rem;
+    background: #e0e7ff;
+    border-radius: 8px;
+}
+
+.a {
+    gap: 0;
+}
+
+.b {
+    gap: 1rem;
+}
+
+.c {
+    row-gap: .25rem;
+    column-gap: 2rem;
+}

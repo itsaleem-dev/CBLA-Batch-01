@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+p {
+    color: #374151;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    background: #fef08a;
+    padding: .25rem .5rem;
+}
+
+#main-title {
+    color: #be123c;
+}
+
+h2, h3 {
+    font-family: Georgia, serif;
+}
+
+.universal * {
+    display: inline-block;
+    margin-right: .5rem;
+    padding: .25rem .5rem;
+    border: 1px solid #6366f1;
+}

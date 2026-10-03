@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.site {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: #1e1b4b;
+    border-radius: 8px;
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    color: #c7d2fe;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.burger span, .burger span::before, .burger span::after {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.burger span {
+    position: relative;
+}
+
+.burger span::before, .burger span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.burger span::before {
+    top: -8px;
+}
+
+.burger span::after {
+    top: 8px;
+}
+
+@media (max-width: 700px) {
+    .burger {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: .75rem;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .toggle:checked ~ .menu {
+        display: flex;
+    }
+}

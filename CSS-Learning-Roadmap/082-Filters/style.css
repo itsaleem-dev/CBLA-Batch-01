@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: .4rem;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.f0 {
+    filter: none;
+}
+
+.f1 {
+    filter: blur(3px);
+}
+
+.f2 {
+    filter: grayscale(100%);
+}
+
+.f3 {
+    filter: sepia(100%);
+}
+
+.f4 {
+    filter: brightness(1.6);
+}
+
+.f5 {
+    filter: contrast(2);
+}
+
+.f6 {
+    filter: hue-rotate(120deg);
+}
+
+.f7 {
+    filter: saturate(3);
+}
+
+.f8 {
+    filter: invert(100%);
+}

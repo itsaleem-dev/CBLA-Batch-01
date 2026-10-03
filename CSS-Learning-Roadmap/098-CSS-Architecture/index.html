@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Architecture</h1>
+        <p class="lead">CSS architecture: BEM naming, cascade layers and utility classes keep large stylesheets organized.</p>
+    </header>
+    <main>
+        <article class="card card--featured">
+            <h3 class="card__title">Featured card</h3>
+            <p class="card__text">Block, element and modifier names make the purpose of each class obvious.</p>
+            <a class="button button--primary" href="#">Primary action</a><a class="button" href="#">Secondary</a>
+        </article>
+        <article class="card">
+            <h3 class="card__title">Utility override</h3>
+            <p class="card__text u-center">Utilities live in the last layer, so they win without !important.</p>
+            <a class="button button--primary u-mt" href="#">Action</a>
+        </article>
+    </main>
+</body>
+</html>

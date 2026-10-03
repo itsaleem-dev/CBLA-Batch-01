@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Rows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Grid Rows</h1>
+        <p class="lead">grid-template-rows and grid-auto-rows control the height of rows.</p>
+    </header>
+    <main>
+        <h3>grid-template-rows: 60px 1fr 60px</h3>
+        <div class="grid r1">
+            <div class="box">Header 60px</div>
+            <div class="box">Flexible row 1fr</div>
+            <div class="box">Footer 60px</div>
+        </div>
+        <h3>grid-auto-rows: minmax(60px, auto)</h3>
+        <div class="grid r2">
+            <div class="box">Short</div>
+            <div class="box">Taller content here that wraps onto more lines when the column is narrow</div>
+            <div class="box">Short</div>
+            <div class="box">Short</div>
+        </div>
+    </main>
+</body>
+</html>

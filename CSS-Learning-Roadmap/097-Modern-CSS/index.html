@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modern CSS</h1>
+        <p class="lead">Modern CSS: nesting, :has(), :is(), text-wrap: balance, oklch() colors and scroll snapping.</p>
+    </header>
+    <main>
+        <h2 class="title">Modern CSS makes complex layouts easy to write</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Plain card</h3>
+                <p>No badge inside, so :has() does nothing here.</p>
+            </article>
+            <article class="card">
+                <h3>Featured card <span class="badge">New</span></h3>
+                <p>This card contains a badge, so :has() gives it a colored border.</p>
+            </article>
+        </div>
+        <div class="options">
+            <label><input type="radio" name="plan" checked> Basic plan</label>
+            <label><input type="radio" name="plan"> Pro plan</label>
+        </div>
+        <div class="strip">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </main>
+</body>
+</html>

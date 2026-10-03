@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Custom Properties</h1>
+        <p class="lead">Custom properties are scoped: they can be overridden on a single component, with fallbacks and calculations.</p>
+    </header>
+    <main>
+        <button class="btn">Default</button>
+        <button class="btn success">Success</button>
+        <button class="btn danger">Danger</button>
+        <div class="dark">
+            <button class="btn">Inside dark area</button>
+        </div>
+        <p class="fallback">Uses a fallback because the variable is missing</p>
+        <div class="scale" style="--level:3">Level 3 = 3 x 40px wide</div>
+    </main>
+</body>
+</html>

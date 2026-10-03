@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Grid Columns</h1>
+        <p class="lead">grid-template-columns defines the columns: fixed sizes, fr units, repeat(), minmax() and auto-fit.</p>
+    </header>
+    <main>
+        <h3>100px 200px 1fr</h3>
+        <div class="grid c1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h3>repeat(4, 1fr)</h3>
+        <div class="grid c2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+        <h3>1fr 2fr 1fr</h3>
+        <div class="grid c3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h3>repeat(auto-fit, minmax(120px, 1fr))</h3>
+        <div class="grid c4">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+    </main>
+</body>
+</html>

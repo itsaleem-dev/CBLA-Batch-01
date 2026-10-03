@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flex Grow</h1>
+        <p class="lead">flex-grow shares leftover space. A box with grow 2 receives twice as much as a box with grow 1.</p>
+    </header>
+    <main>
+        <h3>grow: 0, 1, 2</h3>
+        <div class="flex">
+            <div class="box g0">grow 0</div>
+            <div class="box g1">grow 1</div>
+            <div class="box g2">grow 2</div>
+        </div>
+        <h3>flex: 1 on every item = equal columns</h3>
+        <div class="flex">
+            <div class="box equal">1</div>
+            <div class="box equal">2</div>
+            <div class="box equal">3</div>
+        </div>
+        <h3>one item grows, others stay content-sized</h3>
+        <div class="flex">
+            <div class="box">Fixed</div>
+            <div class="box fill">Grows to fill</div>
+            <div class="box">Fixed</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Accessibility</h1>
+        <p class="lead">Accessibility: skip link, visible focus, screen-reader-only text, focus-within and reduced motion. Press Tab to explore.</p>
+    </header>
+    <main>
+        <a class="skip" href="#content">Skip to main content</a>
+        <div id="content">
+            <div class="card">
+                <h2>Keyboard friendly buttons</h2>
+                <button class="btn">Save <span class="sr-only">the document</span></button>
+                <button class="btn alt">Cancel</button>
+            </div>
+            <div class="card form">
+                <label for="user">Username</label>
+                <input id="user" type="text">
+                <p class="hint">This card gets a highlight with :focus-within.</p>
+            </div>
+            <div class="pulse" aria-hidden="true"></div>
+            <p>The pulse above stops if the system asks for reduced motion.</p>
+        </div>
+    </main>
+</body>
+</html>

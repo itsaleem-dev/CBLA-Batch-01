@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.status {
+    padding: 2rem 1rem;
+    background: #ef4444;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.status::after {
+    content: "Width: under 600px";
+}
+
+.range, .orient {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #e0e7ff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.range::after {
+    content: "Not between 600px and 899px";
+}
+
+.orient::after {
+    content: "Orientation: portrait";
+}
+
+@media (min-width: 600px) {
+    .status {
+        background: #f59e0b;
+    }
+    .status::after {
+        content: "Width: 600px to 899px";
+    }
+}
+
+@media (min-width: 900px) {
+    .status {
+        background: #10b981;
+    }
+    .status::after {
+        content: "Width: 900px to 1199px";
+    }
+}
+
+@media (min-width: 1200px) {
+    .status {
+        background: #3b82f6;
+    }
+    .status::after {
+        content: "Width: 1200px and wider";
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .range {
+        background: #fde68a;
+    }
+    .range::after {
+        content: "Inside the range 600px to 899px";
+    }
+}
+
+@media (orientation: landscape) {
+    .orient::after {
+        content: "Orientation: landscape";
+    }
+}

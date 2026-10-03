@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Combinators</h1>
+        <p class="lead">Combinators describe relationships between elements: descendant, child, adjacent and general sibling.</p>
+    </header>
+    <main>
+        <section class="demo">
+            <h2>Heading</h2>
+            <p>Direct child, and adjacent sibling of the heading</p>
+            <p>Direct child, and general sibling of the heading</p>
+            <div class="nested">
+                <p>Descendant inside a div (not a direct child)</p>
+            </div>
+        </section>
+        <ul class="key">
+            <li>Descendant: .demo p (left border)</li>
+            <li>Child: .demo > p (blue background)</li>
+            <li>Adjacent: h2 + p (bold, yellow)</li>
+            <li>General sibling: h2 ~ p (red text)</li>
+        </ul>
+    </main>
+</body>
+</html>

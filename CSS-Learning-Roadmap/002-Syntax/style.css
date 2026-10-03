@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.demo {
+    color: crimson;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.rule {
+    display: inline-block;
+    padding: .75rem 1rem;
+    background: #1e1b4b;
+    color: #e0e7ff;
+    border-radius: 6px;
+}
+
+.parts {
+    line-height: 2;
+}

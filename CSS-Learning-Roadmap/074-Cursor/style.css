@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.tile {
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border: 2px solid #c7d2fe;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: background .2s;
+}
+
+.tile:hover {
+    background: #e0e7ff;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.c-not-allowed {
+    cursor: not-allowed;
+}
+
+.c-grab {
+    cursor: grab;
+}
+
+.c-zoom-in {
+    cursor: zoom-in;
+}
+
+.c-wait {
+    cursor: wait;
+}
+
+.c-text {
+    cursor: text;
+}
+
+.c-crosshair {
+    cursor: crosshair;
+}
+
+.c-help {
+    cursor: help;
+}
+
+.c-move {
+    cursor: move;
+}
+
+.c-progress {
+    cursor: progress;
+}

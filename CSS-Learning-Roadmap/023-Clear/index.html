@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clear</h1>
+        <p class="lead">Clear stops an element from wrapping around floats and moves it below them.</p>
+    </header>
+    <main>
+        <h3>Without clear</h3>
+        <div class="demo">
+            <div class="f">float</div>
+            <div class="f">float</div>
+            <p class="footer">Footer paragraph wrapping beside the floats</p>
+        </div>
+        <h3>With clear: both</h3>
+        <div class="demo">
+            <div class="f">float</div>
+            <div class="f">float</div>
+            <p class="footer cleared">Footer paragraph with clear: both</p>
+        </div>
+    </main>
+</body>
+</html>

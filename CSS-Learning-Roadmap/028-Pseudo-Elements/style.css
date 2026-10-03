@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.drop::first-letter {
+    float: left;
+    padding-right: .5rem;
+    color: #4f46e5;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.drop::first-line {
+    font-weight: bold;
+}
+
+.quote::before {
+    content: "\201C";
+    color: #4f46e5;
+    font-size: 2rem;
+}
+
+.quote::after {
+    content: "\201D";
+    color: #4f46e5;
+    font-size: 2rem;
+}
+
+.select::selection {
+    background: #4f46e5;
+    color: #fff;
+}
+
+.field {
+    padding: .6rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.field::placeholder {
+    color: #db2777;
+    font-style: italic;
+}
+
+.badge::after {
+    content: "NEW";
+    margin-left: .5rem;
+    padding: .1rem .6rem;
+    background: #10b981;
+    color: #fff;
+    font-size: .75rem;
+    border-radius: 99px;
+}

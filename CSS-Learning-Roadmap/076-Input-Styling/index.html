@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Styling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Input Styling</h1>
+        <p class="lead">Input styling: focus rings, placeholders, valid and invalid states, accent-color and a custom toggle switch.</p>
+    </header>
+    <main>
+        <div class="box">
+            <label for="a">Focus ring and placeholder</label>
+            <input id="a" class="input" type="text" placeholder="Click to focus">
+        </div>
+        <div class="box">
+            <label for="b">Email (required)</label>
+            <input id="b" class="input validate" type="email" required placeholder="Type an email address"><small>Border turns red until the email is valid, then green.</small>
+        </div>
+        <div class="box">
+            <label><input class="accent" type="checkbox" checked> Checkbox with accent-color</label>
+        </div>
+        <div class="box">
+            <label class="switch"><input type="checkbox"><span class="slider"></span> Custom toggle switch</label>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dark Mode</h1>
+        <p class="lead">Dark mode with CSS variables: it follows the system setting through prefers-color-scheme, and the checkbox forces dark mode.</p>
+    </header>
+    <main>
+        <label class="force"><input type="checkbox" id="force-dark"> Force dark theme</label>
+        <article class="card">
+            <h2>Theme aware card</h2>
+            <p>The colors come from CSS variables that change in a media query, so the page follows your operating system theme.</p>
+            <button class="btn">Action</button>
+        </article>
+    </main>
+</body>
+</html>

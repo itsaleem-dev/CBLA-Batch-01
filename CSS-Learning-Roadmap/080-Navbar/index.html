@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Navbar</h1>
+        <p class="lead">A navbar with an active link, hover underline and a CSS-only dropdown. Hover or tab to Services.</p>
+    </header>
+    <main>
+        <nav class="navbar">
+            <a class="logo" href="#">MySite</a>
+            <ul class="links">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="after">Content below the navbar.</p>
+    </main>
+</body>
+</html>

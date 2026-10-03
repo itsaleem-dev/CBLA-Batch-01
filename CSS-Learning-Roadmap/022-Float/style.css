@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.article {
+    display: flow-root;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.photo {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    margin: 0 1rem .5rem 0;
+    background: #6366f1;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.circle {
+    float: right;
+    width: 140px;
+    height: 140px;
+    margin-left: 1rem;
+    background: #f59e0b;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+}

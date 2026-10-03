@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+.shape {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto .75rem;
+    background: #6366f1;
+    border-radius: 12px;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+.pulse {
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+.bounce {
+    background: #f59e0b;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.fade {
+    background: #10b981;
+    animation: fade 2s ease-in 1s infinite alternate;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(.7);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

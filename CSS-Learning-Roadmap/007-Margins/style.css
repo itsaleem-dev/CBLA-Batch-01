@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.stage {
+    display: flow-root;
+    background: #e0e7ff;
+    border: 2px dashed #6366f1;
+}
+
+.item {
+    padding: .75rem;
+    background: #4f46e5;
+    color: #fff;
+}
+
+.m-none {
+    margin: 0;
+}
+
+.m-small {
+    margin: 10px;
+}
+
+.m-large {
+    margin: 40px;
+}
+
+.m-sides {
+    margin: 10px 0 10px 80px;
+}
+
+.m-auto {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}

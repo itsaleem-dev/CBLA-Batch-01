@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f4f6fb;
+}
+
+h1 {
+    margin: 0 0 .5rem;
+    font-size: 1.8rem;
+    color: #312e81;
+}
+
+.lead {
+    margin: 0 0 1.5rem;
+    color: #4b5563;
+}
+
+.swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.sw {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.named {
+    background: tomato;
+}
+
+.hex {
+    background: #10b981;
+}
+
+.rgb {
+    background: rgb(59, 130, 246);
+}
+
+.rgba {
+    background: rgba(139, 92, 246, .5);
+    color: #111;
+}
+
+.hsl {
+    background: hsl(45, 95%, 55%);
+    color: #111;
+}

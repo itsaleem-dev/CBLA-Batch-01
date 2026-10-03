@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+        <p class="lead">A complete styled form with labels, text fields, a select, radio buttons, a checkbox and a textarea.</p>
+    </header>
+    <main>
+        <form class="form" action="#">
+            <fieldset>
+                <legend>Contact us</legend>
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input id="name" type="text" placeholder="Jane Doe">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="jane@example.com">
+                </div>
+                <div class="field">
+                    <label for="topic">Topic</label>
+                    <select id="topic">
+                        <option>General question</option>
+                        <option>Support</option>
+                        <option>Feedback</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <span class="group-title">Preferred reply</span>
+                    <div class="choices">
+                        <label><input type="radio" name="reply" checked> Email</label>
+                        <label><input type="radio" name="reply"> Phone</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" rows="4" placeholder="Write your message"></textarea>
+                </div>
+                <label class="check"><input type="checkbox"> Send me the newsletter</label>
+                <button type="submit">Send message</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
