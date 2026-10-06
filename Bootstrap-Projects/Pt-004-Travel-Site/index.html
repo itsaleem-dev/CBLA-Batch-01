@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderly - Explore The World</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-compass-fill"></i>
+          Wanderly
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <a href="#packages" class="btn nav-btn">
+            Explore Now
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-8">
+            <div class="hero-content">
+              <span class="hero-badge">
+                <i class="bi bi-stars"></i>
+                Discover Your Next Adventure
+              </span>
+
+              <h1>
+                Explore The World.
+                <span>Live The Journey.</span>
+              </h1>
+
+              <p>
+                Discover breathtaking destinations, unforgettable experiences,
+                and beautifully planned adventures around the world.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#destinations" class="btn primary-btn">
+                  Explore Destinations
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="#packages" class="btn outline-btn"> View Packages </a>
+              </div>
+
+              <div class="hero-stats">
+                <div>
+                  <h4>120+</h4>
+                  <span>Destinations</span>
+                </div>
+
+                <div>
+                  <h4>15K+</h4>
+                  <span>Happy Travelers</span>
+                </div>
+
+                <div>
+                  <h4>4.9/5</h4>
+                  <span>Average Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <span>Scroll to explore</span>
+        <i class="bi bi-mouse"></i>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <div class="container">
+        <div class="search-box">
+          <div class="search-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <small>Destination</small>
+              <strong>Where do you want to go?</strong>
+            </div>
+          </div>
+
+          <div class="search-item">
+            <i class="bi bi-calendar3"></i>
+            <div>
+              <small>Travel Date</small>
+              <strong>Choose your date</strong>
+            </div>
+          </div>
+
+          <div class="search-item">
+            <i class="bi bi-people"></i>
+            <div>
+              <small>Travelers</small>
+              <strong>2 Adults</strong>
+            </div>
+          </div>
+
+          <button class="search-btn">
+            <i class="bi bi-search"></i>
+            Search
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="destinations">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span>TOP DESTINATIONS</span>
+          <h2>Places That <em>Inspire</em> You</h2>
+          <p>
+            From tropical beaches to majestic mountains, discover destinations
+            that deserve a place on your bucket list.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="destination-card destination-large">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85"
+                alt="Maldives"
+              />
+              <div class="destination-content">
+                <span>Island Escape</span>
+                <h3>Maldives</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> South Asia</p>
+                <a href="#">Explore <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="destination-card destination-small">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85"
+                alt="Paris"
+              />
+              <div class="destination-content">
+                <span>Romantic Escape</span>
+                <h3>Paris</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> France</p>
+                <a href="#">Explore <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="destination-card destination-small">
+              <img
+                src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85"
+                alt="Italy"
+              />
+              <div class="destination-content">
+                <span>Historic Beauty</span>
+                <h3>Italy</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> Europe</p>
+                <a href="#">Explore <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="destination-card destination-small">
+              <img
+                src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=85"
+                alt="Tokyo"
+              />
+              <div class="destination-content">
+                <span>Modern Adventure</span>
+                <h3>Tokyo</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> Japan</p>
+                <a href="#">Explore <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="destination-card destination-small">
+              <img
+                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=85"
+                alt="India"
+              />
+              <div class="destination-content">
+                <span>Colorful Journey</span>
+                <h3>India</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> Asia</p>
+                <a href="#">Explore <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="experience-image">
+              <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1100&q=85"
+                alt="Travel experience"
+              />
+
+              <div class="experience-floating-card">
+                <div class="floating-icon">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div>
+                  <strong>10+ Years</strong>
+                  <span>Travel Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="experience-content">
+              <span class="section-label">WHY WANDERLY?</span>
+
+              <h2>
+                We Don't Just Plan Trips.
+                <span>We Create Memories.</span>
+              </h2>
+
+              <p>
+                Your journey should be more than just visiting places. That's
+                why we carefully design experiences that connect you with
+                cultures, people and unforgettable moments.
+              </p>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-map"></i>
+                  </div>
+                  <div>
+                    <h5>Curated Experiences</h5>
+                    <p>
+                      Handpicked experiences made for unforgettable journeys.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div>
+                    <h5>24/7 Travel Support</h5>
+                    <p>Our team is always ready whenever you need us.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div>
+                    <h5>Safe & Secure</h5>
+                    <p>Travel confidently with trusted partners worldwide.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#packages" class="btn primary-btn">
+                Discover More
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding packages-section" id="packages">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span>POPULAR PACKAGES</span>
+            <h2>Choose Your <em>Adventure</em></h2>
+          </div>
+
+          <a href="#" class="view-all">
+            View All Packages
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="package-card">
+              <div class="package-image">
+                <img
+                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85"
+                  alt="Bali"
+                />
+                <span class="package-tag">BEST SELLER</span>
+                <button class="heart-btn"><i class="bi bi-heart"></i></button>
+              </div>
+
+              <div class="package-body">
+                <div class="package-location">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Bali, Indonesia
+                </div>
+
+                <h3>Tropical Bali Escape</h3>
+
+                <div class="package-info">
+                  <span><i class="bi bi-clock"></i> 7 Days</span>
+                  <span><i class="bi bi-people"></i> 2-8 People</span>
+                </div>
+
+                <div class="package-footer">
+                  <div>
+                    <small>Starting from</small>
+                    <strong>$899</strong>
+                  </div>
+                  <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="package-card">
+              <div class="package-image">
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85"
+                  alt="Switzerland"
+                />
+                <span class="package-tag">POPULAR</span>
+                <button class="heart-btn"><i class="bi bi-heart"></i></button>
+              </div>
+
+              <div class="package-body">
+                <div class="package-location">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Interlaken, Switzerland
+                </div>
+
+                <h3>Swiss Alpine Adventure</h3>
+
+                <div class="package-info">
+                  <span><i class="bi bi-clock"></i> 8 Days</span>
+                  <span><i class="bi bi-people"></i> 2-6 People</span>
+                </div>
+
+                <div class="package-footer">
+                  <div>
+                    <small>Starting from</small>
+                    <strong>$1,499</strong>
+                  </div>
+                  <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="package-card">
+              <div class="package-image">
+                <img
+                  src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85"
+                  alt="Dubai"
+                />
+                <span class="package-tag">LUXURY</span>
+                <button class="heart-btn"><i class="bi bi-heart"></i></button>
+              </div>
+
+              <div class="package-body">
+                <div class="package-location">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Dubai, UAE
+                </div>
+
+                <h3>Luxury Dubai Experience</h3>
+
+                <div class="package-info">
+                  <span><i class="bi bi-clock"></i> 5 Days</span>
+                  <span><i class="bi bi-people"></i> 2-4 People</span>
+                </div>
+
+                <div class="package-footer">
+                  <div>
+                    <small>Starting from</small>
+                    <strong>$1,099</strong>
+                  </div>
+                  <a href="#"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span>TRAVELER STORIES</span>
+          <h2>Loved By <em>Travelers</em></h2>
+          <p>Real stories from people who explored the world with us.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>
+                “Everything was perfectly organized. From the hotel to the
+                activities, every detail made our Bali trip absolutely
+                unforgettable.”
+              </p>
+
+              <div class="reviewer">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Sarah" />
+                <div>
+                  <strong>Sarah Williams</strong>
+                  <span>London, UK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>
+                “Wanderly made our Switzerland adventure stress-free. The places
+                they recommended were absolutely stunning. Highly recommended!”
+              </p>
+
+              <div class="reviewer">
+                <img src="https://i.pravatar.cc/100?img=12" alt="James" />
+                <div>
+                  <strong>James Anderson</strong>
+                  <span>New York, USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+
+              <p>
+                “The perfect combination of luxury and adventure. Their support
+                team was amazing throughout our entire Dubai trip.”
+              </p>
+
+              <div class="reviewer">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Emma" />
+                <div>
+                  <strong>Emma Davis</strong>
+                  <span>Sydney, Australia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="contact">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-content">
+            <span>GET TRAVEL INSPIRATION</span>
+            <h2>Your Next Adventure <em>Starts Here.</em></h2>
+            <p>
+              Subscribe to get exclusive travel deals, destination guides and
+              inspiration delivered to your inbox.
+            </p>
+          </div>
+
+          <form class="newsletter-form">
+            <div class="input-wrapper">
+              <i class="bi bi-envelope"></i>
+              <input type="email" placeholder="Enter your email address" />
+            </div>
+            <button type="submit">
+              Subscribe
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a class="footer-brand" href="#">
+              <i class="bi bi-compass-fill"></i>
+              Wanderly
+            </a>
+
+            <p class="footer-description">
+              Making the world easier to explore, one unforgettable journey at a
+              time.
+            </p>
+
+            <div class="social-links">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h5>Explore</h5>
+            <ul>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Activities</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5>Contact Us</h5>
+
+            <div class="footer-contact">
+              <div>
+                <i class="bi bi-envelope"></i>
+                <span>hello@wanderly.com</span>
+              </div>
+
+              <div>
+                <i class="bi bi-telephone"></i>
+                <span>+1 234 567 890</span>
+              </div>
+
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <span>New York, United States</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Wanderly. All rights reserved.</span>
+
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
